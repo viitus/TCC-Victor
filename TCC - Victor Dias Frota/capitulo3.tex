@@ -1,2 +1,54 @@
 \chapter[Fundamentação Teórica]{Fundamentação Teórica}\label{capitulo3}
 \addcontentsline{toc}{chapter}{Fundamentação Teórica}
+
+% Marcador visível para pendências de fonte (remover antes da versão final).
+\providecommand{\completar}[1]{\textcolor{red}{[COMPLETAR: #1]}}
+
+Este capítulo reúne os conceitos que fundamentam a avaliação da usabilidade do aplicativo de transporte público utilizado em Divinópolis. Os temas são apresentados na seguinte ordem: usabilidade e experiência do usuário, heurísticas de Nielsen, métodos de avaliação, instrumentos e métricas, prototipação e design centrado no usuário, e qualidade de software segundo a ISO/IEC 25010. Os trechos marcados em vermelho indicam pontos que ainda dependem de fonte primária.
+
+\section{Usabilidade e Experiência do Usuário}
+
+Segundo \citeonline{suzianti2020}, a norma ISO 9241-11 define usabilidade como o grau em que um produto pode ser usado por usuários específicos para alcançar objetivos específicos, com eficácia, eficiência e satisfação, em um contexto de uso específico. \completar{citar diretamente a ISO 9241-11 e conferir a edição}
+
+A experiência do usuário (UX) é um conceito mais amplo. \citeonline{frederico2020} apresentam, com base na ISO 9241-210, a UX como as percepções e reações de uma pessoa resultantes do uso, ou da expectativa de uso, de um produto, sistema ou serviço. Os autores acrescentam que ela decorre das características do produto e também dos valores e circunstâncias do usuário antes, durante e depois do uso. \citeonline{suzianti2020}, por sua vez, atribuem uma definição semelhante à ISO 9241-110. \completar{conferir na norma qual parte trata da definição de UX e citá-la diretamente}
+
+A interface do usuário (UI), por fim, está relacionada à aparência e ao estilo do software, incluindo o tamanho, a localização e o posicionamento dos elementos \cite{suzianti2020}. Assim, a UI é uma das partes que compõem a experiência, e não a experiência inteira.
+
+\section{Heurísticas de Nielsen e Severidade dos Problemas}
+
+As heurísticas de Nielsen são princípios gerais de projeto de interface, e não regras específicas, o que permite aplicá-las em contextos variados \cite{suzianti2020}. As dez heurísticas apresentadas por \citeonline{suzianti2020} são: visibilidade do estado do sistema; correspondência entre o sistema e o mundo real; controle e liberdade do usuário; consistência e padrões; prevenção de erros; reconhecimento em vez de memorização; flexibilidade e eficiência de uso; estética e design minimalista; ajuda aos usuários para reconhecer, diagnosticar e corrigir erros; e ajuda e documentação. \completar{citar Nielsen (1994) diretamente}
+
+Quando a inspeção heurística identifica problemas, é necessário priorizá-los. A classificação por severidade serve a esse fim. \completar{definir a escala de severidade de Nielsen a partir de fonte primária; nenhum dos três artigos analisados trata desse tema}
+
+\section{Métodos de Avaliação}
+
+\citeonline{hussain2017} relatam que os métodos usualmente empregados para avaliar aplicativos de transporte público são a avaliação heurística, o percurso cognitivo, o teste em laboratório, o teste de campo e o teste convencional com usuários. A escolha depende do objetivo do estudo. Em aplicativos de transporte, por exemplo, o teste de campo coloca os participantes em tarefas que exigem viajar de ônibus ou trem, o que o torna mais realista que o teste em laboratório.
+
+Na revisão desses autores, os métodos mais frequentes foram os levantamentos por questionário (21,43\%), os testes de campo (19,05\%) e as entrevistas (14,29\%). Esses números descrevem a literatura revisada e não indicam, por si só, qual método é o mais adequado a este trabalho.
+
+Uma distinção útil para a escolha é a que separa inspeção e teste com usuários. Na inspeção, avaliadores examinam a interface com base em princípios, como a avaliação heurística. No teste com usuários, pessoas representativas do público-alvo executam tarefas e o pesquisador observa o resultado \cite{suzianti2020}. \citeonline{frederico2020} ressaltam que o teste de usabilidade depende muito da existência de um protótipo, motivo pelo qual optaram por grupos de discussão em uma fase conceitual. \completar{apoiar a distinção entre inspeção e teste em fonte primária}
+
+O \textit{Retrospective Think Aloud} (RTA) é uma técnica em que o participante verbaliza opiniões e sugestões depois de executar cada tarefa. \citeonline{suzianti2020} a usaram para registrar as dificuldades percebidas e as sugestões de melhoria. \completar{diferenciar o \textit{think aloud} concorrente do retrospectivo, com fonte primária}
+
+\section{Instrumentos e Métricas}
+
+\citeonline{hussain2017} descrevem três modelos de métricas de usabilidade. O de Nielsen inclui eficiência, facilidade de aprendizado, memorabilidade, satisfação e erros. O da ISO 9241-11 inclui eficácia, eficiência e satisfação. O de Shackel inclui eficácia, facilidade de aprendizado, flexibilidade e atitude. Na revisão, as métricas mais citadas foram satisfação (21,88\%), eficácia (17,19\%), eficiência e facilidade de uso (ambas com 14,06\%).
+
+Entre os instrumentos, o questionário USE (\textit{Usefulness, Satisfaction, and Ease of Use}) mede a avaliação subjetiva do usuário. Segundo \citeonline{suzianti2020}, ele tem 30 afirmações, divididas em quatro dimensões (utilidade, facilidade de uso, facilidade de aprendizado e satisfação), respondidas em uma escala de 1 a 7. \completar{citar Lund (2001) diretamente}
+
+Os mesmos autores combinaram o USE com medidas de desempenho: sucesso na tarefa, taxa de conclusão, número de erros e tempo na tarefa. Também sugerem o uso da escala SUS (\textit{System Usability Scale}) em pesquisas futuras. \completar{descrever o SUS a partir de fonte primária (Brooke, 1996) e decidir, com a orientadora, se será usado}
+
+\section{Prototipação e Design Centrado no Usuário}
+
+\citeonline{frederico2020} defendem que os requisitos de aplicativos devem partir das necessidades reais dos usuários, e não de uma lógica puramente técnica. Segundo eles, quando o usuário só é consultado após o protótipo completo, as críticas tendem a ser descartadas pelo custo de alterar o que já foi construído. Por isso, avaliaram o conceito em fase inicial, sem protótipo funcional, por meio de mapas conceituais e grupos de discussão. Os próprios autores reconhecem que esse método se limita a uma resposta de aceitação ou rejeição, de natureza qualitativa.
+
+\citeonline{suzianti2020} seguiram outro caminho: avaliaram o aplicativo existente, identificaram problemas por meio de testes de usabilidade e propuseram um redesenho baseado nesses achados, no \textit{Material Design} e nas heurísticas de Nielsen. Em seguida, compararam o desempenho e a satisfação antes e depois do redesenho. \completar{fundamentar o conceito de design centrado no usuário na ISO 9241-210 e definir o nível de fidelidade do protótipo, com fonte primária}
+
+\section{Usabilidade como Qualidade de Software: ISO/IEC 25010}
+
+A ISO/IEC 25010 trata da qualidade de produtos de software e da qualidade em uso, e a usabilidade é uma de suas características. \completar{citar a norma diretamente e descrever suas subcaracterísticas de usabilidade; os três artigos analisados não tratam desse tema}
+% Pista de busca: \citeonline{hussain2017} citam em suas referências um trabalho de Hussain e Mkpojiogu (2015) sobre a aplicação da ISO/IEC 25010 na avaliação da qualidade em uso de um sistema online.
+
+\section{Síntese do Capítulo}
+
+Os conceitos apresentados oferecem três bases para este trabalho: definições de usabilidade e UX, critérios e instrumentos de medida, e exemplos de como a avaliação pode orientar melhorias na interface. A escolha dos métodos e dos instrumentos aplicados ao aplicativo de Divinópolis é detalhada no Capítulo \ref{capitulo4}.

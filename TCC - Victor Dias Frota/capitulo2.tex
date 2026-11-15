@@ -1,56 +1,24 @@
-\chapter[Trabalhos Relacionados]{Trabalhos Relacionados}\label{capitulo2}
-\addcontentsline{toc}{chapter}{Trabalhos Relacionados}
+\chapter[Estado da Arte]{Estado da Arte}\label{capitulo2}
+\addcontentsline{toc}{chapter}{Estado da Arte}
 
-Este capítulo apresenta três estudos que fundamentam a avaliação de usabilidade de aplicativos móveis de transporte público e que servem de referência inicial para este trabalho. Para cada estudo, descrevem-se o objetivo, a metodologia empregada e a lacuna em relação à proposta aqui apresentada, que é investigar a usabilidade do aplicativo de transporte público utilizado em Divinópolis-MG e propor melhorias para a experiência dos usuários.
+Este capítulo apresenta trabalhos relacionados à avaliação e ao redesign de aplicativos móveis voltados ao transporte público. A seleção reúne um estudo de redesign de interface baseado em testes de usabilidade, uma proposta de experiência do usuário para operação de ônibus e uma revisão sistemática sobre métricas e métodos de avaliação. Ao final, comparam-se os estudos e são identificadas as lacunas que motivam este trabalho.
 
-\section{Redesenho da interface do aplicativo da MRT Jakarta}
+\section{Trabalhos Relacionados}
 
-\citeonline{suzianti2020} redesenharam a interface do aplicativo móvel da MRT Jakarta com o objetivo de melhorar a eficácia, a eficiência e a satisfação dos usuários. O estudo foi conduzido como estudo de caso com testes de usabilidade realizados com 40 participantes, distribuídos por gerações. A coleta combinou medição de desempenho (sucesso, conclusão, erros e tempo em tarefas), \textit{Retrospective Think Aloud} (RTA) e o questionário USE, que avalia utilidade, facilidade de uso, facilidade de aprendizado e satisfação em escala de 1 a 7. A proposta de redesenho tomou como referência o \textit{Material Design} e as dez heurísticas de usabilidade de Nielsen.
+\citeonline{suzianti2020} redesenharam a interface do aplicativo móvel da MRT Jakarta com o objetivo de melhorar a eficácia, a eficiência e a satisfação dos usuários. O estudo foi conduzido como estudo de caso, com testes de usabilidade, medição de desempenho, \textit{Retrospective Think Aloud} (RTA) e o questionário USE, além de diretrizes do \textit{Material Design} e das heurísticas de Nielsen.
 
-Segundo os autores, a interface redesenhada apresentou melhor nível de usabilidade que a anterior. Houve redução do tempo e do número de erros nas tarefas e aumento das médias do questionário USE, com diferenças estatisticamente significativas nos testes aplicados. O estudo, porém, concentra-se no aplicativo de um sistema metroviário, e não na investigação e melhoria da usabilidade de um aplicativo de transporte por ônibus de uma cidade de médio porte.
+\citeonline{frederico2020} propuseram um modelo operacional para ônibus de rota fixa que integra um aplicativo móvel de chamadas, de modo a registrar a intenção de embarque dos passageiros e melhorar a comunicação com a operação. A abordagem de experiência do usuário (UX) foi aplicada em estágio conceitual, com mapas conceituais, grupos focais, grupo de controle e simulações de telas e funcionalidades.
 
-\section{Aplicativo de chamada de ônibus controlado por passageiros}
+\citeonline{hussain2017} realizaram uma revisão sistemática da literatura para identificar as principais métricas e métodos usados na avaliação da usabilidade de aplicativos de transporte público. Foram inicialmente encontrados 144 artigos, dos quais 22 foram selecionados para a análise.
 
-\citeonline{frederico2020} propuseram um modelo operacional para ônibus de rota fixa que integra um aplicativo móvel de chamadas, de modo a registrar a intenção de embarque dos passageiros e melhorar a comunicação com a operação. O trabalho parte da situação do sistema de ônibus de São Paulo, em que o controle acompanha os veículos, mas não registra a intenção de embarque do passageiro.
+\section{Comparação e Lacunas}
 
-A metodologia adotou uma abordagem de \textit{User Experience} (UX) em estágio conceitual. Foram usados mapas conceituais para representar o processo atual e a solução proposta, e duas sessões de grupo de discussão com usuários típicos de ônibus de São Paulo, com foco na faixa etária de 21 a 30 anos. Um dos grupos, de controle, discutiu soluções antes de conhecer a proposta; o outro foi exposto a simulações de telas e funcionalidades. Os autores concluem que o método permitiu avaliar a aceitação da proposta sem a construção de um protótipo funcional. O foco do estudo está na comunicação entre passageiros, motoristas e centro de controle, e não no redesenho da usabilidade de um aplicativo de transporte já existente.
+Os três trabalhos oferecem base metodológica e conceitual para esta monografia, mas cada um deixa uma lacuna em relação ao que se propõe aqui.
 
-\section{Métricas e métodos de avaliação de usabilidade}
+\citeonline{suzianti2020} é o mais próximo em método, pois avalia um aplicativo já existente por meio de testes de usabilidade, RTA e questionário USE, e usa os resultados para redesenhar a interface. Entretanto, o objeto de estudo é o aplicativo da MRT Jakarta, e não a usabilidade de um aplicativo de ônibus de uma cidade de médio porte, como é o caso de Divinópolis.
 
-\citeonline{hussain2017} realizaram uma revisão sistemática da literatura para identificar as métricas e os métodos usados na avaliação da usabilidade de aplicações de transporte público. Das 144 publicações inicialmente obtidas nas bases Google Scholar, ACM Digital Library e IEEE Xplore, 22 foram selecionadas para a análise.
+\citeonline{frederico2020} tratam de transporte por ônibus, mas com outro foco: o problema que buscam resolver é a comunicação entre passageiros, motoristas e centro de controle, em especial a solicitação de embarque. Por isso, propõem um novo modelo operacional em vez de investigar e melhorar a usabilidade de um aplicativo que já está em uso.
 
-Os resultados indicam que satisfação, eficácia e eficiência estão entre as métricas mais empregadas. Quanto aos métodos, destacam-se os \textit{surveys}, seguidos dos testes de campo e das entrevistas. O estudo fornece, portanto, um mapa das métricas e dos métodos recorrentes na área, mas não desenvolve nem testa uma interface específica para um aplicativo de transporte.
+\citeonline{hussain2017} não avaliam um aplicativo específico. Sua revisão sistemática mapeia as métricas e os métodos mais usados em estudos de usabilidade de aplicativos de transporte público, mas não desenvolve nem testa uma nova interface.
 
-\section{Síntese e lacuna}
-
-A Tabela~\ref{tab:relacionados} resume os trabalhos descritos e os compara com a proposta deste trabalho.
-
-\begin{table}[htb]
-\centering
-\caption{Comparação entre os trabalhos relacionados e a proposta deste trabalho}
-\label{tab:relacionados}
-\footnotesize
-\begin{tabular}{|p{2.3cm}|p{3.6cm}|p{4.2cm}|p{4.6cm}|}
-\hline
-\textbf{Autor (Ano)} & \textbf{Objetivo principal} & \textbf{Metodologia} & \textbf{Lacuna/limitação} \\ \hline
-Suzianti e Belahakki (2020) &
-Redesenhar a interface do aplicativo móvel da MRT Jakarta, buscando melhorar a eficácia, a eficiência e a satisfação dos usuários. &
-Estudo de caso com testes de usabilidade, medição de desempenho, RTA e questionário USE, utilizando \textit{Material Design} e heurísticas de Nielsen. &
-Concentra-se no redesenho do aplicativo da MRT Jakarta, e não na investigação e melhoria da usabilidade de um aplicativo de transporte por ônibus de uma cidade de médio porte. \\ \hline
-Frederico \textit{et al.} (2020) &
-Propor um modelo operacional para ônibus de rota fixa com aplicativo móvel de chamadas, registrando a intenção de embarque e melhorando a comunicação com a operação. &
-Abordagem de UX em estágio conceitual, com mapas conceituais, grupos de discussão, grupo de controle e simulações de telas e funcionalidades. &
-Foca na comunicação entre passageiros, motoristas e centro de controle, e não no redesenho da usabilidade de um aplicativo de transporte já existente. \\ \hline
-Hussain, Mkpojiogu e Jasin (2017) &
-Identificar as principais métricas e métodos usados na avaliação da usabilidade de aplicativos de transporte público. &
-Revisão sistemática da literatura: 144 artigos encontrados e 22 selecionados. &
-Apresenta métricas e métodos, mas não desenvolve nem testa uma interface específica para um aplicativo de transporte. \\ \hline
-Este trabalho &
-Investigar a usabilidade do aplicativo de transporte público utilizado em Divinópolis e desenvolver uma proposta com melhorias de usabilidade. &
-Avaliação do aplicativo existente e desenvolvimento de um redesenho/protótipo, fundamentado nas métricas e nos métodos identificados na literatura. &
-Contribuição: aplicar a um contexto local os métodos da literatura, identificando problemas de usabilidade do aplicativo existente e propondo uma interface aprimorada. \\ \hline
-\end{tabular}
-\fonte{Elaborado pelo autor.}
-\end{table}
-
-Observa-se que os estudos tratam, isoladamente, do redesenho de uma interface (\citeonline{suzianti2020}), da concepção de um serviço digital para ônibus (\citeonline{frederico2020}) e do levantamento de métricas e métodos de avaliação (\citeonline{hussain2017}). Nenhum deles avalia a usabilidade de um aplicativo de ônibus já em uso em uma cidade de médio porte e, a partir dessa avaliação, propõe melhorias. É nessa lacuna que este trabalho se insere.
+Em comparação, este trabalho investiga a usabilidade do aplicativo de transporte público utilizado em Divinópolis e propõe melhorias a partir da avaliação, com apoio nas métricas e nos métodos identificados na literatura. Sua contribuição é aplicar esses conhecimentos a um contexto local, identificando problemas de usabilidade do aplicativo existente e propondo uma interface aprimorada para os usuários do transporte público.
